@@ -1,70 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
-.en-markup-crop-options {
-    top: 18px !important;
-    left: 50% !important;
-    margin-left: -100px !important;
-    width: 200px !important;
-    border: 2px rgba(255,255,255,.38) solid !important;
-    border-radius: 4px !important;
+.top {
+	height: 50px;
+	border: 3px solid gray;
+	margin: auto;
+	text-align: center;
 }
 
-.en-markup-crop-options div div:first-of-type {
-    margin-left: 0px !important;
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
 }
-</style></head><body>
 
-<hr>
-<h2>Tag 1. "NST-800x250_Kette1-3_Sofa-Auto" (Line Item: 800x250+920x250 Search Retargeting_Billboard, Size: 800x250, Type:HTML)</h2>
-<script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5acc83bc0ae89979dc6235d2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5acc83bc0ae89979dc6235d2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5acc83bc0ae89979dc6235d2&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-</hr>
+.tablink {
+    background-color: #555;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33.33%;
+}
 
+.tablink:hover {
+    background-color: #777;
+}
 
-    
-    
-<hr>
-<h2>Tag 2. "NST-920x250_Kette1-2_Sofa-Auto" (Line Item: 800x250+920x250 Search Retargeting_Billboard, Size: 920x250, Type: HTML)</h2>
-<script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5acc9c870ae89916c26556f3&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5acc9c870ae89916c26556f3&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5acc9c870ae89916c26556f3&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-</hr>
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
 
+#MPU {background-color: white;}
+#Sky {background-color: white;}
+#Leaderboard {background-color: white;}
+#DMPU {background-color: white;}
+</style>
+</head>
+<body>
 
+<div class="top"><img src="NaZPwbuw_400x400.jpg" style="width:75px;dispay:table-cell;vertical-align:middle;margin-top:5px;"></img></div>
+<button class="tablink" onclick="openPage('MPU', this, 'white)">728x90</button>
+<button class="tablink" onclick="openPage('Sky', this, 'white')" id="defaultOpen">300x250</button>
+<button class="tablink" onclick="openPage('Leaderboard', this, 'white')">160x600</button>
 
+<div id="MPU" class="tabcontent">
+  <h3></h3>
+  <p><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5aabdd520ae89954e117dc12&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5aabdd520ae89954e117dc12&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5aabdd520ae89954e117dc12&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
+</p>
+</div>
 
-<hr>
-<h2>Tag 3. "NST-300x250_Kette1-3_Sofa-Auto" (Line Item: 728x90+160x600+300x250+300x600 Search Retargeting_Adbundle_HalfPageAd, Size: 300x250, Type: HTML)</h2>
-<script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5accbe950ae8992da42bddb2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5accbe950ae8992da42bddb2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5accbe950ae8992da42bddb2&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-</hr>
+<div id="Sky" class="tabcontent">
+  <h3></h3>
+  <p><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5aabde770ae89956800713a2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5aabde770ae89956800713a2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5aabde770ae89956800713a2&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
+</p>
+</div>
 
+<div id="Leaderboard" class="tabcontent">
+  <h3></h3>
+  <p><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5aabdd260ae89956330e0142&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5aabdd260ae89956330e0142&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5aabdd260ae89956330e0142&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
+</p>
+</div>
 
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
 
-
-<hr>
-<h2>Tag 4. "NST-728x90_Kette1-3_Sofa-Auto" (Line Item: 728x90+160x600+300x250+300x600 Search Retargeting_Adbundle_HalfPageAd, Size: 728x90, Type: HTML)</h2>
-<script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5accbed80ae8992e652b2c73&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5accbed80ae8992e652b2c73&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5accbed80ae8992e652b2c73&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-</hr>
-
-
-
-
-<hr>
-<h2>Tag 5. "NST-160x600-Kette1-3_Sofa-Auto " (Line Item: 728x90+160x600+300x250+300x600 Search Retargeting_Adbundle_HalfPageAd, Size: 160x600, Type: HTML)</h2>
-<script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5accbf320ae8992f4a2a39e3&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5accbf320ae8992f4a2a39e3&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5accbf320ae8992f4a2a39e3&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-</hr>
-
-
-
-
-<hr>
-<h2>Tag 6. "NST-300x600_Sofa-Auto_Kette1-2 " (Line Item: 728x90+160x600+300x250+300x600 Search Retargeting_Adbundle_HalfPageAd, Size: 300x600, Type: HTML)</h2>
-<script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5accbf6b0ae8992e4259b152&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5accbf6b0ae8992e4259b152&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5accbf6b0ae8992e4259b152&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-</hr>
-
-
-
-
-<hr>
-<h2>Tag 7. "NST-800x250_Kette1-3_Sofa-Auto" (Line Item: 728x90+160x600+300x250+300x600 Search Retargeting_Adbundle_HalfPageAd, Size: 800x250, Type: HTML)</h2>
-<script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5accbfc40ae8992fa87326a2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5accbfc40ae8992fa87326a2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5accbfc40ae8992fa87326a2&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-</hr>
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
 </body>
-</html>
+</html> 
